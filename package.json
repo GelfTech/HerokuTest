@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "commonjs", 
   "engines": {
-    "node": ">=18.0.0",
+    "node": "18.x",
     "yarn": ">=1.22.0"
   },
   "scripts": {
@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node server.cjs",  
-    "heroku-postbuild": "yarn install --production=false && yarn build"
+    "heroku-postbuild": "yarn install --mode=production && yarn build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
