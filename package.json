@@ -2,17 +2,17 @@
   "name": "mantis-app",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs", 
+  "type": "commonjs",
   "engines": {
-    "node": ">=18.0.0",
-    "yarn": ">=1.22.0"
+    "node": "18.x",  
+    "npm": "9.x"     
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node server.cjs",  
+    "start": "node server.cjs",
     "heroku-postbuild": "npm install && npm run build"
   },
   "dependencies": {
